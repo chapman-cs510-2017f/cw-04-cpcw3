@@ -23,12 +23,11 @@ def main(argv):
         return eratosthenes(n)
     
 
-def gen_eratosthenes(n):
+    def gen_eratosthenes(n):
      i = 2
      while True:
         if i
-    pass
-        
+    pass     
     
 if __name__  == "__main__":
     import sys
