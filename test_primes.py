@@ -11,7 +11,7 @@
 from primes import eratosthenes
 
 def test_primes():
-    #Tests eratosthenes for n = 23
+    #Tests eratosthenes for n = 23, 10, and 15
     assert eratosthenes(23) == [2,3,5,7,11,13,17,19]
     assert eratosthenes(10) == [2,3,5,7]
     assert eratosthenes(15) == [2,3,5,7,11,13]
