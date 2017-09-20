@@ -24,7 +24,10 @@ def main(argv):
     
 
 def gen_eratosthenes(n):
-    
+    i = 2
+    while True:
+        
     
 if __name  == "__main__":
+    import sys
     main(sys.argv[1])
