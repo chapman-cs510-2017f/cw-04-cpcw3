@@ -7,31 +7,39 @@
 # Assignment: Classwork 4
 
 def eratosthenes(n):
-    potential_primes = list(i for i in range(2,n))
-    for item in potential_primes:
-        for item2 in potential_primes:
-            if item != item2:
-                if item2%item == 0:
-                    potential_primes.remove(item2)
-    return potential_primes
+   potential_primes = list(i for i in range(2,n))
+   for item in potential_primes:
+       for item2 in potential_primes:
+           if item != item2:
+               if item2%item == 0:
+                   potential_primes.remove(item2)
+   return potential_primes
 
-def main(argv):
-    n = int(argv)
-    if n  <=0:
-        print("You chose a negative number")
-    else:
-        return eratosthenes(n)
-    
+# def main(argv):
+#     n = int(argv)
+#     if n  <=0:
+#         print("You chose a negative number")
+#     else:
+#         return eratosthenes(n)
+   
 
-    def gen_eratosthenes(n):
-     i = 2
-     while True:
-        if i
-    pass     
-    
+def gen_eratosthenes():
+    i = 2
+    l_of_primes = []
+    while True:
+       a = list(i%x for x in l_of_primes)
+       if 0 in a:
+           i += 1
+       else:
+           l_of_primes.append(i)
+           yield i
+           i += 1
+
+# f = gen_eratosthenes()
+# print([next(f) for _ in range(9)])
+# print(len([next(f) for _ in range(9)]))
+       
+   
 if __name__  == "__main__":
-    import sys
-    main(sys.argv[1])
-    
-    
-print(eratosthenes(23))
+   import sys
+   main(sys.argv[1])
