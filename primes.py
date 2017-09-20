@@ -7,14 +7,22 @@
 # Assignment: Classwork 4
 
 def eratosthenes(n):
-   potential_primes = list(i for i in range(2,n))
-   for item in potential_primes:
-       for item2 in potential_primes:
-           if item != item2:
-               if item2%item == 0:
-                   potential_primes.remove(item2)
-   return potential_primes
+    potential_primes = list(i for i in range(2,n))
+    for item in potential_primes:
+        for item2 in potential_primes:
+            if item != item2:
+                if item2%item == 0:
+                    potential_primes.remove(item2)
+    return potential_primes
 
+def era2(n):
+    p = []
+    i = 2
+    k = gen_eratosthenes()
+    while i < n:
+        i = next(k)
+        p.append(i)
+    return p   
 # def main(argv):
 #     n = int(argv)
 #     if n  <=0:
