@@ -1,6 +1,6 @@
 # CS510 CW 4
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Chelsea Parlett & Chris Watkins**
 
 [![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-04-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-04-YOURNAME)
 
@@ -22,9 +22,7 @@ Complete the following exercises, saving your solutions in the indicated files. 
 
 ## Assessment
 
-Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
-
-**CHANGEME**
+The most useful part of this assignment was using the Jupyter notebook. Chris has never used it before, so getting experience with the notebook was very helpful. In addition, comparing the efficiency of the Eratothenes function and generating function was eye opening because our initial thought that the original function was more efficient was wrong. 
 
 ## Honor Pledge
 
@@ -35,4 +33,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+**Chelsea Parlett & Chris Watkins**
