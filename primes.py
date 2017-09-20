@@ -16,7 +16,7 @@ def eratosthenes(n):
     return potential_primes
 
 def main(argv):
-    n = argv
+    n = int(argv)
     if n  <=0:
         print("You chose a negative number")
     else:
@@ -24,10 +24,15 @@ def main(argv):
     
 
 def gen_eratosthenes(n):
-    i = 2
-    while True:
+     i = 2
+     while True:
+        if i
+    pass
         
     
-if __name  == "__main__":
+if __name__  == "__main__":
     import sys
     main(sys.argv[1])
+    
+    
+print(eratosthenes(23))
