@@ -7,6 +7,7 @@
 # Assignment: Classwork 4
 
 def eratosthenes(n):
+    """ uses eratosthenes sieve to find primes"""
     potential_primes = list(i for i in range(2,n))
     for item in potential_primes:
         for item2 in potential_primes:
@@ -16,6 +17,7 @@ def eratosthenes(n):
     return potential_primes
 
 def era2(n):
+    """ uses generator to find next prime"""
     p = []
     i = 2
     k = gen_eratosthenes()
@@ -32,16 +34,17 @@ def era2(n):
    
 
 def gen_eratosthenes():
+    """ uses while loop to define primes"""
     i = 2
     l_of_primes = []
     while True:
-       a = list(i%x for x in l_of_primes)
-       if 0 in a:
-           i += 1
-       else:
-           l_of_primes.append(i)
-           yield i
-           i += 1
+        a = list(i%x for x in l_of_primes)
+        if 0 in a:
+            i += 1
+        else:
+            l_of_primes.append(i)
+            yield i
+            i += 1
 
 # f = gen_eratosthenes()
 # print([next(f) for _ in range(9)])
